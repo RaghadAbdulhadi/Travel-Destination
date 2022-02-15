@@ -1,9 +1,14 @@
-function Header(){
-    return(
+import '../header/Header.css';
+import Navbar from '../Navbar/Navbar';
+
+function Header() {
+    return (
         <>
-        <h1 style={{color:'pink'}}>Welcome to Travel Destination Website ;)</h1>
-        <br></br>
-        <br></br>
+            <div className = "header">
+            <h1 className = "title">Travel Destination</h1>
+            </div>
+            
+            <Navbar />
         </>
     )
 }

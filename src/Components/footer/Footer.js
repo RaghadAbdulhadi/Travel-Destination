@@ -1,10 +1,11 @@
-import '../footer/Footer.css' 
+import '../footer/Footer.css';
+
 function Footer(props) {
     return (
         <>
             <div id="social-media-links">
-                <h3 style={{color:'purple'}}>Contact Us</h3>
-                <ul class="social-media-icons">
+                <h3>Contact Us</h3>
+                <ul className="social-media-icons">
                     <li><a href="https://www.facebook.com/"><img
                         src={"https://img.icons8.com/ios-glyphs/30/000000/facebook.png"} alt={"Facebook"} width={"50px"} /></a>
                     </li>
@@ -17,7 +18,7 @@ function Footer(props) {
                 </ul>
             </div>
 
-            <h3 style={{color:'blue'}}>
+            <h3>
                 The Author of the Website: {props.author}
             </h3>
         </>
