@@ -4,11 +4,14 @@ import './index.css';
 //import the App.js file 
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <App />
+    <BrowserRouter>
+      <App />
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -25,8 +28,3 @@ reportWebVitals();
 
 //To refresh the page when you go to any other route, it rerednders it --> <BrowserRouter forceRefresh>
 
-// //<BrowserRouter getUserConfirmation={
-//   (message, callback) => {
-//     callback(window.confirm("Are you sure you want to go to the Home page ? :)"))
-//   }
-// }>
