@@ -9,7 +9,7 @@ function Tours({ tours }) {
                 tours.map(tour => {
                     return (
                         <div className="tour-info" key={tour.id}>
-                            <Link to={`/tour/${tour.id}`}>
+                            <Link to={`/tour/${tour.name}/${tour.id}`}>
                                 <Tour tour={tour} />
                             </Link>
                         </div>
